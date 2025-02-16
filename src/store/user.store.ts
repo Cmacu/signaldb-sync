@@ -1,5 +1,7 @@
-import { Collection, createLocalStorageAdapter, SyncManager } from "signaldb"
-import vueReactivityAdapter from "signaldb-plugin-vue"
+import { Collection } from "@signaldb/core";
+import createLocalStorageAdapter from "@signaldb/localstorage";
+import { SyncManager } from "@signaldb/sync";
+import vueReactivityAdapter from "@signaldb/vue";
 
 export type User = { id: string; name: string }
 const name = "users"

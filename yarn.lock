@@ -228,6 +228,29 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.21.3.tgz#4115233aa1bd5a2060214f96d8511f6247093212"
   integrity sha512-fOvu7PCQjAj4eWDEuD8Xz5gpzFqXzGlxHZozHP4b9Jxv9APtdxL6STqztDzMLuRXEc4UpXGGhx029Xgm91QBeA==
 
+"@signaldb/core@^1.2.0":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@signaldb/core/-/core-1.2.3.tgz#ba12e01cdbb743d9a0455a62b2f3393b87d80df0"
+  integrity sha512-0NLjyQ5wWY9MteBbEwkVi5C87/17felRHrVgZ1ZvcJheQH4hvlX527qWV5K2qWsX8IMr+iChuDBIxnNe6vxLGw==
+  dependencies:
+    fast-sort "^3.4.1"
+    mingo "^6.5.1"
+
+"@signaldb/localstorage@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@signaldb/localstorage/-/localstorage-1.0.0.tgz#11cd9fcd5862bd150ad567aee1247d36b9d7c847"
+  integrity sha512-D/rU0TCbbkMv6kroKaADbyTcNE+gGcDaRW3IfUZIosmyZh94mk+WqH3LqtZppbkmyQ++HT7JA6gRJOzWS8xEbw==
+
+"@signaldb/sync@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@signaldb/sync/-/sync-1.1.1.tgz#d1b5c482201929c79dc67a5f4280cb71b1e8aa8e"
+  integrity sha512-LeF/AC13CW3mRhAsx/lpU3ZYfLn3vPBfj9K8Q0yr4a6NtF1gPQuBYr2NHE9o3HN7mASRExVyZBkAgqHVnnpjWg==
+
+"@signaldb/vue@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@signaldb/vue/-/vue-1.0.0.tgz#cd7f16d09bd98dc4a860046c8502f11d8c70fb69"
+  integrity sha512-VWm1XY+hfnbA7xAA3LSILadN5w7auIfPKSsGJ16duTtRWnTsjgaUJBKIa2GkxxgVoYregoqh9L5wdi+vhAxNAQ==
+
 "@tsconfig/node20@^20.1.4":
   version "20.1.4"
   resolved "https://registry.yarnpkg.com/@tsconfig/node20/-/node20-20.1.4.tgz#3457d42eddf12d3bde3976186ab0cd22b85df928"
@@ -458,7 +481,7 @@ estree-walker@^2.0.2:
   resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
   integrity sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==
 
-fast-sort@^3.4.0:
+fast-sort@^3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/fast-sort/-/fast-sort-3.4.1.tgz#837e1abaafdc6c6c077b632913a7ec2dda283cb6"
   integrity sha512-76uvGPsF6So53sZAqenP9UVT3p5l7cyTHkLWVCMinh41Y8NDrK1IYXJgaBMfc1gk7nJiSRZp676kddFG2Aa5+A==
@@ -495,10 +518,10 @@ memorystream@^0.3.1:
   resolved "https://registry.yarnpkg.com/memorystream/-/memorystream-0.3.1.tgz#86d7090b30ce455d63fbae12dda51a47ddcaf9b2"
   integrity sha512-S3UwM3yj5mtUSEfP41UZmt/0SCoVYUcU1rkXv+BQ5Ig8ndL4sPoJNBUJERafdPb5jjHJGuMgytgKvKIf58XNBw==
 
-mingo@^6.4.13:
-  version "6.4.15"
-  resolved "https://registry.yarnpkg.com/mingo/-/mingo-6.4.15.tgz#5c617888a24b2333cbd59e0486ba6d9727a3ead2"
-  integrity sha512-fKUCGr7fUxrb7YBK6whm5O5VouXfKAVtxnb+6g3Xuwsj9Jt9u8hhMOgiUoKO4kp3DmuiN0qgpYX2H/nP3zD1Hw==
+mingo@^6.5.1:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/mingo/-/mingo-6.5.3.tgz#d4a3899dd2e8587cb7a9d1fc2de05a5e15a01b43"
+  integrity sha512-jp8AhCM871cDUZLTXt9jTsA5rwW74Zp+mYnbMO97PZCpVKI2UOhAamszpZp1wuXJOBnKiEQfkpGsEHj4AmadOg==
 
 minimatch@^9.0.0, minimatch@^9.0.3:
   version "9.0.5"
@@ -618,19 +641,6 @@ shell-quote@^1.7.3:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.1.tgz#6dbf4db75515ad5bac63b4f1894c3a154c766680"
   integrity sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==
-
-signaldb-plugin-vue@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/signaldb-plugin-vue/-/signaldb-plugin-vue-1.0.0.tgz#8828c5c14f39482209283cf6f14178c2e9395183"
-  integrity sha512-xbblvmiTeWsKctO3sCpNJDNmBPQ18ANT8hiCFjWiZx5EmnU6QLPJ/hKr9WKip+kB1K7GetFqrVp+Ctr4WV7M0w==
-
-signaldb@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/signaldb/-/signaldb-0.20.0.tgz#bef4a6f765a7fb76fa513728ba822a341afe03d3"
-  integrity sha512-IFLZbbSKoQPejNz23dKueUCNZ8cwflr21DvOnZp4Rf69w4V00srEbxXO9+64Drjw0UMnSaCDTiNPqO+fZ2xLXQ==
-  dependencies:
-    fast-sort "^3.4.0"
-    mingo "^6.4.13"
 
 source-map-js@^1.2.0:
   version "1.2.1"
