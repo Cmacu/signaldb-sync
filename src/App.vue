@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import { computed, ref, watchEffect } from "vue"
-import { Collection, createLocalStorageAdapter } from "signaldb"
-import vueReactivityAdapter from "signaldb-plugin-vue"
+import { computed, ref, watchEffect } from "vue";
+import { Collection } from "@signaldb/core";
+import createLocalStorageAdapter from "@signaldb/localstorage";
+import vueReactivityAdapter from "@signaldb/vue";
+
 
 type User = { id: string; name: string }
 const users = new Collection<User>({
@@ -22,6 +24,24 @@ const addUser = () => {
 }
 
 const name = ref("")
+
+const codeWithoutWarnings = () => {
+  for (let index = 0; index < 1000; index++) {
+    const cursor = users.find()
+    cursor.fetch()
+    cursor.cleanup()
+  }
+}
+
+const codeWithWarnings = () => {
+  for (let index = 0; index < 1000; index++) {
+    users.find().fetch()
+  }
+}
+
+
+codeWithoutWarnings()
+// codeWithWarnings()
 </script>
 
 <template>

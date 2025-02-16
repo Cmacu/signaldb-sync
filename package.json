@@ -11,8 +11,10 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
-    "signaldb": "0.20.0",
-    "signaldb-plugin-vue": "1.0.0",
+    "@signaldb/core": "^1.2.0",
+    "@signaldb/localstorage": "^1.0.0",
+    "@signaldb/sync": "^1.1.1",
+    "@signaldb/vue": "^1.0.0",
     "vue": "^3.4.29"
   },
   "devDependencies": {
